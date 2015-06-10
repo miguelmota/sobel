@@ -4,8 +4,8 @@
 
 Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedia.org/wiki/Edge_detection);
 
-![](./example/images/valve.png =200x200)
-![](./example/images/valve-output.png =200x200)
+<img src="./example/images/valve.png " style="width: 200px; height: 200px;">
+<img src="./example/images/valve-output.png " style="width: 200px; height: 200px;">
 
 [![NPM](https://nodei.co/npm/sobel.png)](https://nodei.co/npm/sobel)
 
@@ -16,11 +16,11 @@ Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedi
 # Install
 
 ```bash
-npm install flowright
+npm install sobel
 ```
 
 ```bash
-bower install flowright
+bower install sobel
 ```
 
 # Usage
