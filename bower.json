@@ -1,0 +1,25 @@
+{
+  "name": "sobel",
+  "main": "sobel.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/miguelmota/sobel",
+  "authors": [
+    "Miguel Mota <miguelmota2@gmail.com>"
+  ],
+  "description": "Sobel Filter algorithm in JavaScript.",
+  "keywords": [
+    "sobel",
+    "filter",
+    "edge",
+    "detection",
+    "algorithm"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}
