@@ -2,7 +2,7 @@
 
 > [Sobel Filter](https://en.wikipedia.org/wiki/Sobel_operator) algorithm in JavaScript.
 
-Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedia.org/wiki/Edge_detection);
+Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedia.org/wiki/Edge_detection).
 
 <img src="./example/images/valve.png" width="360">
 <img src="./example/images/valve-output.png" width="360">
