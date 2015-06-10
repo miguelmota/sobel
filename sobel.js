@@ -40,7 +40,6 @@
         var r = pixelAt(x, y, 0);
         var g = pixelAt(x, y, 1);
         var b = pixelAt(x, y, 2);
-        var a = pixelAt(x, y, 3);
 
         var avg = (r + g + b) / 3;
         grayscaleData.push(avg, avg, avg, 255);
@@ -72,7 +71,7 @@
           (kernelY[1][2] * pixelAt(x + 1, y)) +
           (kernelY[2][0] * pixelAt(x - 1, y + 1)) +
           (kernelY[2][1] * pixelAt(x, y + 1)) +
-          (kernelY[2][2] * pixelAt(x+1,y+1))
+          (kernelY[2][2] * pixelAt(x + 1, y + 1))
         );
 
         var magnitude = Math.sqrt((pixelX * pixelX) + (pixelY * pixelY))>>0;
