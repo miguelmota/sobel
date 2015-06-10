@@ -4,8 +4,8 @@
 
 Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedia.org/wiki/Edge_detection);
 
-<img src="./example/images/valve.png " style="width: 200px; height: 200px;">
-<img src="./example/images/valve-output.png " style="width: 200px; height: 200px;">
+<img src="./example/images/valve.png" width="200">
+<img src="./example/images/valve-output.png" width="200">
 
 [![NPM](https://nodei.co/npm/sobel.png)](https://nodei.co/npm/sobel)
 
