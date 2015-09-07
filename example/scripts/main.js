@@ -32,6 +32,9 @@ function drawImage(event) {
 
   var sobelImageData = Sobel(imageData);
   contextSobel.putImageData(sobelImageData, 0, 0);
+
+  sobelImageData = Sobel(imageData, true);
+  console.log(sobelImageData);
 }
 
 loadImage('images/valve.png');

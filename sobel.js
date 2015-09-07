@@ -1,9 +1,9 @@
 (function(root) {
   'use strict';
 
-  function Sobel(imageData) {
+  function Sobel(imageData, ifMiddleData) {
     if (!(this instanceof Sobel)) {
-      return new Sobel(imageData);
+      return new Sobel(imageData, ifMiddleData);
     }
 
     var w = imageData.width;
@@ -48,7 +48,10 @@
 
     pixelAt = bindPixelAt(grayscaleData);
 
+    var middleData = [];
+
     for (y = 0; y < h; y++) {
+      ifMiddleData && middleData.push([]);
       for (x = 0; x < w; x++) {
         var pixelX = (
             (kernelX[0][0] * pixelAt(x - 1, y - 1)) +
@@ -76,10 +79,12 @@
 
         var magnitude = Math.sqrt((pixelX * pixelX) + (pixelY * pixelY))>>0;
 
+        ifMiddleData && (middleData[y][x] = magnitude);
         sobelData.push(magnitude, magnitude, magnitude, 255);
       }
     }
 
+    if (ifMiddleData) return middleData;
     return new ImageData(new Uint8ClampedArray(sobelData), w, h);
   }
 
