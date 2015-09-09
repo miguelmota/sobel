@@ -43,9 +43,20 @@ function drawImage(event) {
   context.drawImage(image, 0, 0);
   var imageData = context.getImageData(0, 0, w, h);
 
-  var sobelImageData = Sobel(imageData);
+  // Sobel constructor returns an Uint8ClampedArray with sobel data
+  var sobelData = Sobel(imageData);
+
+  // toImageData() return a new ImageData object
+  var sobelImageData = sobelData.toImageData();
   context.putImageData(sobelImageData, 0, 0);
 }
+```
+
+Access the raw sobel data
+
+```
+var sobelImageData = Sobel(imageData);
+console.log(sobelImageData._data); //
 ```
 
 # License

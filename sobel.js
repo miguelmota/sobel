@@ -80,7 +80,12 @@
       }
     }
 
-    return new ImageData(new Uint8ClampedArray(sobelData), w, h);
+    var clampedArray = new Uint8ClampedArray(sobelData);
+    clampedArray.toImageData = function() {
+      return new ImageData(clampedArray, w, h);
+    };
+
+    return clampedArray;
   }
 
   if (typeof exports !== 'undefined') {

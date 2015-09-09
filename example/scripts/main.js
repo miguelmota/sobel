@@ -30,7 +30,8 @@ function drawImage(event) {
   context.drawImage(image, 0, 0);
   var imageData = context.getImageData(0, 0, w, h);
 
-  var sobelImageData = Sobel(imageData);
+  var sobelData = Sobel(imageData);
+  var sobelImageData = sobelData.toImageData();
   contextSobel.putImageData(sobelImageData, 0, 0);
 }
 
