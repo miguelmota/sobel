@@ -1,6 +1,6 @@
 {
   "name": "sobel",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sobel Filter algorithm in JavaScript.",
   "main": "sobel.js",
   "directories": {

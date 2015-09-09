@@ -52,13 +52,6 @@ function drawImage(event) {
 }
 ```
 
-Access the raw sobel data
-
-```
-var sobelImageData = Sobel(imageData);
-console.log(sobelImageData._data); //
-```
-
 # License
 
 MIT
