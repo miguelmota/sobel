@@ -1,3 +1,6 @@
+
+
+
 (function(root) {
   'use strict';
 
@@ -82,7 +85,18 @@
 
     var clampedArray = new Uint8ClampedArray(sobelData);
     clampedArray.toImageData = function() {
-      return new ImageData(clampedArray, w, h);
+      try{
+        return new ImageData(clampedArray, w, h);
+      }catch(error) {
+        console.warn('Your browser doesn\'t support the ImageData constructor');
+        var c = document.createElement('canvas');
+        var ctx = c.getContext('2d');
+        var imageData = ctx.createImageData(w,h);         
+        imageData.data.set(clampedArray);
+        return imageData;
+      }
+
+  
     };
 
     return clampedArray;
