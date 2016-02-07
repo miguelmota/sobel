@@ -46,7 +46,7 @@ function drawImage(event) {
   // Sobel constructor returns an Uint8ClampedArray with sobel data
   var sobelData = Sobel(imageData);
 
-  // toImageData() return a new ImageData object
+  // [sobelData].toImageData() returns a new ImageData object
   var sobelImageData = sobelData.toImageData();
   context.putImageData(sobelImageData, 0, 0);
 }
@@ -78,14 +78,14 @@ function drawImage(event) {
   ww.onmessage = function(event) {
     var sobelData = event.data;
 
-    // Sobel.toImageData() return a new ImageData object
+    // Sobel.toImageData() returns a new ImageData object
     var sobelImageData = Sobel.toImageData(sobelData, width, height);
     contextSobel.putImageData(sobelImageData, 0, 0);
   };
 }
 ```
 
-`webWorker.js`:
+In `webWorker.js`:
 
 ```javascript
 importScripts('/sobel.js');
