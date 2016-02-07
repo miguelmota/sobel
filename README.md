@@ -52,7 +52,7 @@ function drawImage(event) {
 }
 ```
 
-Using a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API):
+Same example as above but using a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API):
 
 ```javascript
 var canvas = document.getElementById('canvas');
