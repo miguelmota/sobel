@@ -83,16 +83,29 @@
       }
     }
 
-    var clampedArray = new Uint8ClampedArray(sobelData);
+    var clampedArray = sobelData;
+
+    if (typeof Uint8ClampedArray !== 'undefined') {
+      clampedArray = new Uint8ClampedArray(sobelData);
+    }
+
     clampedArray.toImageData = function() {
-      try {
-        return new ImageData(clampedArray, w, h);
-      } catch(error) {
-        var canvas = document.createElement('canvas');
-        var context =  canvas.getContext('2d');
-        var imageData = context.createImageData(w, h);
-        imageData.data.set(clampedArray);
-        return imageData;
+      if (typeof window === 'undefined') {
+        return {
+          width: w,
+          height: h,
+          data: clampedArray
+        };
+      } else {
+        if (typeof ImageData === 'undefined') {
+          return new ImageData(clampedArray, w, h);
+        } else {
+          var canvas = document.createElement('canvas');
+          var context =  canvas.getContext('2d');
+          var imageData = context.createImageData(w, h)
+          imageData.data.set(clampedArray);
+          return imageData;
+        }
       }
     };
 
