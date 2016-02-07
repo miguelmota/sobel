@@ -98,13 +98,13 @@
         };
       } else {
         if (typeof ImageData === 'undefined') {
-          return new ImageData(clampedArray, w, h);
-        } else {
           var canvas = document.createElement('canvas');
           var context =  canvas.getContext('2d');
           var imageData = context.createImageData(w, h)
           imageData.data.set(clampedArray);
           return imageData;
+        } else {
+          return new ImageData(clampedArray, w, h);
         }
       }
     };
