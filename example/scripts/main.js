@@ -40,7 +40,7 @@ function drawImage(event) {
   contextSobel.putImageData(sobelImageData, 0, 0);
 }
 
-function drawImageUsingWorker() {
+function drawImageUsingWorker(event) {
   var image = event.target;
   var width = image.width;
   var height = image.height;
