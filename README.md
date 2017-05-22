@@ -11,7 +11,7 @@ Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedi
 
 # Demo
 
-[http://lab.moogs.io/sobel](http://lab.moogs.io/sobel)
+[https://lab.miguelmota.com/sobel](https://lab.miguelmota.com/sobel)
 
 # Install
 
