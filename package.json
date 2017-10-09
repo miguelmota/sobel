@@ -1,6 +1,6 @@
 {
   "name": "sobel",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Sobel Filter algorithm in JavaScript.",
   "main": "sobel.js",
   "directories": {
@@ -26,7 +26,7 @@
   "author": {
     "name": "Miguel Mota",
     "email": "hello@miguelmota.com",
-    "url": "http://www.miguelmota.com/"
+    "url": "https://miguelmota.com"
   },
   "license": {
     "type": "MIT",
@@ -40,6 +40,6 @@
     "tape": "^3.0.3"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6.11"
   }
 }
