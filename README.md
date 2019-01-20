@@ -1,6 +1,16 @@
+<h3 align="center">
+  <br />
+  <img src="https://user-images.githubusercontent.com/168240/51433857-708bbc00-1c09-11e9-98e1-c0bf2d39e8a5.png" alt="logo" width="400" />
+  <br />
+  <br />
+  <br />
+</h3>
+
 # sobel
 
 > [Sobel Filter](https://en.wikipedia.org/wiki/Sobel_operator) algorithm in JavaScript.
+
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/sobel/master/LICENSE) [![Build Status](https://travis-ci.org/miguelmota/sobel.svg?branch=master)](https://travis-ci.org/miguelmota/sobel) [![dependencies Status](https://david-dm.org/miguelmota/sobel/status.svg)](https://david-dm.org/miguelmota/sobel) [![NPM version](https://badge.fury.io/js/sobel.svg)](http://badge.fury.io/js/sobel)
 
 Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedia.org/wiki/Edge_detection).
 
@@ -8,17 +18,17 @@ Sobel Filter is an algorithm often used for [edge detection](https://en.wikipedi
 
 [![NPM](https://nodei.co/npm/sobel.png)](https://nodei.co/npm/sobel)
 
-# Demo
+## Demo
 
 [https://lab.miguelmota.com/sobel](https://lab.miguelmota.com/sobel)
 
-# Install
+## Install
 
 ```bash
 npm install sobel
 ```
 
-# Usage
+## Getting started
 
 ```javascript
 var canvas = document.getElementById('canvas');
@@ -93,6 +103,6 @@ self.onmessage = function(event) {
 };
 ```
 
-# License
+## License
 
-MIT
+[MIT](LICENSE)

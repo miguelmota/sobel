@@ -1,11 +1,8 @@
 {
   "name": "sobel",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Sobel Filter algorithm in JavaScript.",
   "main": "sobel.js",
-  "directories": {
-    "test": "test"
-  },
   "files": [
     "sobel.js"
   ],
@@ -30,14 +27,14 @@
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/miguelmota/sobel/blob/master/LICENSE.md"
+    "url": "https://github.com/miguelmota/sobel/blob/master/LICENSE"
   },
   "bugs": {
     "url": "https://github.com/miguelmota/sobel/issues"
   },
   "homepage": "https://github.com/miguelmota/sobel",
   "devDependencies": {
-    "tape": "^3.0.3"
+    "tape": "^4.9.2"
   },
   "engines": {
     "node": ">=6.11"
