@@ -1,6 +1,6 @@
 <h3 align="center">
   <br />
-  <img src="https://user-images.githubusercontent.com/168240/51433857-708bbc00-1c09-11e9-98e1-c0bf2d39e8a5.png" alt="logo" width="400" />
+  <img src="https://user-images.githubusercontent.com/168240/51433857-708bbc00-1c09-11e9-98e1-c0bf2d39e8a5.png" alt="logo" width="450" />
   <br />
   <br />
   <br />
@@ -102,6 +102,8 @@ self.onmessage = function(event) {
   self.postMessage(sobelData);
 };
 ```
+
+Check out the full example in the [example](example/) folder.
 
 ## License
 
